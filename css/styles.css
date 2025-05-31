@@ -294,7 +294,10 @@ background-position: center;
         fill: #F4F4FD;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-icons-item:hover, .team-icons-item:focus {
+.team-icons-item:hover {
+        background-color: #404bbf;
+    }
+ .team-icons-item:focus {
     background-color: #404bbf;
 }
 .team-icons-svg {
