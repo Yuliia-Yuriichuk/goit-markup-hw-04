@@ -142,7 +142,7 @@ letter-spacing: 0.02em;
 padding: 188px 0;
 max-width: 1440px;
 margin: 0 auto;
-background-image: linear-gradient(rgba(46, 47, 66, 0.7)), url(../images/hero-background-min.jpg);
+background-image: linear-gradient(rgba(46, 47, 66, 0.7)), linear-gradient(rgba(46, 47, 66, 0.7)), url(../images/hero-background-min.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
@@ -233,7 +233,7 @@ background-position: center;
 
   
 }
-.strenghts-icon svg {
+.strengths-svg {
     width: 64px;
     height: 64px;
 }
@@ -268,18 +268,17 @@ background-position: center;
     padding: 32px 0;
     
 }
-svg {
-    width: 16px;
-    height: 16px;
+.team-icons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
 }
 .team-icons-svg {
     fill: #f4f4fd;
+    width: 16px;
+        height: 16px;
 }
-.team-icons {
-    display: flex;
-        justify-content: center;
-        gap: 24px;
-}
+
 .team-icons-item {
     width: 40px;
     height: 40px;
