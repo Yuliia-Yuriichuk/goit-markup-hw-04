@@ -2,7 +2,6 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #FFFFFF;
     color:#434455;
-    max-width: 1440px;
     margin: 0 auto;
 }
 a {
@@ -63,16 +62,17 @@ nav span {
 .header-list {
     display: flex;
     gap: 40px;
+
 }
+
 .header-menu-active::after {
     content: '';
     position: absolute;
    color: #404BBF;
  display: block;
     background-color: #404BBF;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    border-radius: 2px;
+   
+     border-radius: 2px;
     width: 100%;
         height: 4px;
         left: 0;
@@ -89,13 +89,14 @@ color: #404BBF;
 
 .header-menu {
     position: relative;
-    padding: 24px 0;
+
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color:#2E2F42;
-    padding: 24px 0 0 0;
+    padding: 24px 0 24px 0;
     display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
@@ -222,8 +223,8 @@ background-position: center;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    padding-top: 24px;
-    padding-bottom: 24px;
+
+
     margin-bottom: 8px;
     border: 1px solid #8e8f99;
         border-radius: 4px;
@@ -272,6 +273,7 @@ background-position: center;
     display: flex;
     justify-content: center;
     gap: 24px;
+  
 }
 .team-icons-svg {
     fill: #f4f4fd;
@@ -286,9 +288,11 @@ background-position: center;
 .team-icons-link {
     width: 100%;
         height: 100%;
+    
         display: flex;
         justify-content: center;
         align-items: center;
+
         border-radius: 50%;
         background-color: #4D5AE5;
         fill: #F4F4FD;
@@ -316,6 +320,7 @@ background-position: center;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 
@@ -346,6 +351,7 @@ background-position: center;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
+    
 }
 
 .div-portfolio {
@@ -364,11 +370,15 @@ background-position: center;
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
         
 }
-.portfolio-box:hover {
-    transform: translateY(-10px);
+
+.portfolio-list-item:hover .overlay-text {
+    transform: translateY(10px);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+/* .div-portfolio:hover {
+    transform: translateY(10px);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
  
 
      .portfolio-box:hover .overlay-text {
@@ -416,7 +426,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 100px 0;
 
 }
-.footer-container {
+.footer .container {
     display: flex;
     align-items: baseline;
 
