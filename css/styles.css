@@ -345,7 +345,7 @@ background-position: center;
 }
 .portfolio-list-item {
     width: calc((100% - 48px) / 3);
-    
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-list-item:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -368,23 +368,22 @@ background-position: center;
         margin: 0 auto;
         overflow: hidden;
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      
 }
 
 .portfolio-list-item:hover .overlay-text {
     transform: translateY(0);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  
 }
 
  
 
-     .portfolio-box:hover .overlay-text {
+     .portfolio-box:hover {
     
      transform: translatey(0);
      cursor: pointer;
      box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
  }
 .overlay-text {
     position: absolute;
